@@ -14,7 +14,7 @@ O intuito desse repositório é registrar minha evolução diária sobre assunto
 ## Técnicas e tecnologias utilizadas
 
 - ``Java 13``
-- ``InteliJ IDEA``
+- ``IntelliJ IDEA``
 - ``Estrutura de dados``
 - ``Paradigma de orientação a objetos``
 
