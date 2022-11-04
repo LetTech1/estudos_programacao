@@ -1,4 +1,4 @@
-package estrutura_de_dados.teste;
+package estrutura_de_dados.vetores.teste_vetor;
 
 import estrutura_de_dados.vetores.Contato;
 import estrutura_de_dados.vetores.Lista;
