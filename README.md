@@ -45,7 +45,7 @@ O intuito desse repositório é registrar minha evolução diária sobre assunto
       Produto p2 = new Produto();<br />
       p2.nome = "Caneta";<br />
   
-      p1.equals(p2); (A RESPOSTA É FALSE, POIS SÃO DOIS OBJETOS E ELES APONTAM PARA ENDEREÇOS DE MEMÓRIA DIFERENTES)<br />
+      p1.equals(p2); (A RESPOSTA É FALSE, POIS SÃO DOIS OBJETOS E ELES APONTAM PARA ENDEREÇOS DE MEMÓRIA DIFERENTES)
   Sendo assim, para que o equals funcione como esperamos, devemos sobrescrever o método na classe Produto.
   
 2. Existem alguns princípios definidos pelo próprio Java sobre a implementação do equals:
