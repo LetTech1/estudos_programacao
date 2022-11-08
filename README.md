@@ -63,6 +63,15 @@ O intuito desse repositório é registrar minha evolução diária sobre assunto
       
 https://blog.cod3r.com.br/desmistificando-hashcode-e-equals-em-java/
       
-## Revisão sobre Arrays e Collections
+## Revisão sobre Collections
+      
+Collection é um conjunto bem definido de interfaces e classes para representar e tratar grupos de dados como uma única unidade, que pode ser chamada coleção, ou collection.<br />
+Collection é composta por alguns tipos de coleções:
+* Set: Não é ordenado por padrão, porém temos a possibilidade de ordenar, não é indexado e não aceita repetição.
+* List: Indexada e aceita repetição.
+* Map: Chave/valor, a chave não pode ser repetida e o valor é possível repetir.
+* Queue: Implementa fila, First In First Out (FIFO).
+* Stack: Implementa pilha, Last In First Out (LIFO).
+      
       
 </p>
