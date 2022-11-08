@@ -46,7 +46,8 @@ O intuito desse repositório é registrar minha evolução diária sobre assunto
       p2.nome = "Caneta";<br />
   
       p1.equals(p2); (A RESPOSTA É FALSE, POIS SÃO DOIS OBJETOS E ELES APONTAM PARA ENDEREÇOS DE MEMÓRIA DIFERENTES)
-  Sendo assim, para que o equals funcione como esperamos, devemos sobrescrever o método na classe Produto.
+  Sendo assim, para que o equals funcione como esperamos, devemos sobrescrever o método na classe Produto.<br />
+  Para comparações entre dois objetos, o equals já é o suficiente.
   
 2. Existem alguns princípios definidos pelo próprio Java sobre a implementação do equals:
 
@@ -57,7 +58,8 @@ O intuito desse repositório é registrar minha evolução diária sobre assunto
   
 3. Hashcode
 * Já um hashcode(código hash) é um valor inteiro associado com todos os objetos em Java. Então, para obter esse hashcode precisamos utilizar o método hashCode(), esse método retornará um inteiro para o objeto passado. Sendo assim, se dois objetos possuem o mesmo código hash, provavelmente são iguais ou no mínimo parecidos(a depender da implementação).<br /><br />
-  Podemos passar como código hash o tamanho de uma palavra por exemplo, então se tivermos 1000 elementos, ao invés de utilizar direto o método equals, que nesse caso seria necessário comparar um por um, com o hashcode nós vamos separar somente os elementos que possuem o código hash igual e dai usar o equals somente nesses elementos. Tornando o processo mais rápido.
+  Podemos passar como código hash o tamanho de uma palavra por exemplo, então se tivermos 1000 elementos, ao invés de utilizar direto o método equals, que nesse caso seria necessário comparar um por um, com o hashcode nós vamos separar somente os elementos que possuem o código hash igual e dai usar o equals somente nesses elementos. Tornando o processo mais rápido.<br />
+  O Hashcode é mais utilizado quando estamos trabalhando com Collections.
       
 https://blog.cod3r.com.br/desmistificando-hashcode-e-equals-em-java/
       
