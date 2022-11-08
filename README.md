@@ -36,7 +36,7 @@ O intuito desse repositório é registrar minha evolução diária sobre assunto
 <img src="https://user-images.githubusercontent.com/71408314/200052240-a056f701-153c-4b14-8b3d-f166bf23a094.png" height="400" width="500"/>
 </div>
 
-## Revisão sobre Arrays e Collections
+## Equals e Hashcode
 
 1. Entendendo Equals e Hashcode
 * <p>Equals: equals é um metódo utilizado para comparar dois objetos, sendo assim, ele só retornará true se os dois objetos apontarem para o mesmo endereço de memória. Exemplo: <br /><br />
@@ -60,5 +60,7 @@ O intuito desse repositório é registrar minha evolução diária sobre assunto
   Podemos passar como código hash o tamanho de uma palavra por exemplo, então se tivermos 1000 elementos, ao invés de utilizar direto o método equals, que nesse caso seria necessário comparar um por um, com o hashcode nós vamos separar somente os elementos que possuem o código hash igual e dai usar o equals somente nesses elementos. Tornando o processo mais rápido.
       
 https://blog.cod3r.com.br/desmistificando-hashcode-e-equals-em-java/
+      
+## Revisão sobre Arrays e Collections
       
 </p>
