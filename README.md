@@ -59,4 +59,6 @@ O intuito desse repositório é registrar minha evolução diária sobre assunto
 * Já um hashcode(código hash) é um valor inteiro associado com todos os objetos em Java. Então, para obter esse hashcode precisamos utilizar o método hashCode(), esse método retornará um inteiro para o objeto passado. Sendo assim, se dois objetos possuem o mesmo código hash, provavelmente são iguais ou no mínimo parecidos(a depender da implementação).<br /><br />
   Podemos passar como código hash o tamanho de uma palavra por exemplo, então se tivermos 1000 elementos, ao invés de utilizar direto o método equals, que nesse caso seria necessário comparar um por um, com o hashcode nós vamos separar somente os elementos que possuem o código hash igual e dai usar o equals somente nesses elementos. Tornando o processo mais rápido.
       
+https://blog.cod3r.com.br/desmistificando-hashcode-e-equals-em-java/
+      
 </p>
