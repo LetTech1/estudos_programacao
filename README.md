@@ -35,3 +35,43 @@ O intuito desse repositório é registrar minha evolução diária sobre assunto
 <div align="center">
 <img src="https://user-images.githubusercontent.com/71408314/200052240-a056f701-153c-4b14-8b3d-f166bf23a094.png" height="400" width="500"/>
 </div>
+
+## Equals e Hashcode
+
+1. Entendendo Equals e Hashcode
+* <p>Equals: equals é um metódo utilizado para comparar dois objetos, sendo assim, ele só retornará true se os dois objetos apontarem para o mesmo endereço de memória. Exemplo: <br /><br />
+      Produto p1 = new Produto();<br />
+      p1.nome = "Caneta";<br /><br />
+      Produto p2 = new Produto();<br />
+      p2.nome = "Caneta";<br />
+  
+      p1.equals(p2); (A RESPOSTA É FALSE, POIS SÃO DOIS OBJETOS E ELES APONTAM PARA ENDEREÇOS DE MEMÓRIA DIFERENTES)
+  Sendo assim, para que o equals funcione como esperamos, devemos sobrescrever o método na classe Produto.<br />
+  Para comparações entre dois objetos, o equals já é o suficiente.
+  
+2. Existem alguns princípios definidos pelo próprio Java sobre a implementação do equals:
+
+* Consistente: para quaisquer objetos x e y, o valor de x.equals(y) só poderá ser diferente se as propriedade em equals() mudem.
+* Transitivo: para quaisquer objetos x, y e , se x.equals(y) retorna true e y.equals(z) retorna true, então x.equals(z) deve retornar true.
+* Simétrico: dados dois objetos x e y, x.equals(y) deve retornar true se e somente se y.equals(x) retorna true.
+* Reflexivo: um objeto x deve ser igual a ele mesmo, ou seja, retornar true no x.equals(x).
+  
+3. Hashcode
+* Já um hashcode(código hash) é um valor inteiro associado com todos os objetos em Java. Então, para obter esse hashcode precisamos utilizar o método hashCode(), esse método retornará um inteiro para o objeto passado. Sendo assim, se dois objetos possuem o mesmo código hash, provavelmente são iguais ou no mínimo parecidos(a depender da implementação).<br /><br />
+  Podemos passar como código hash o tamanho de uma palavra por exemplo, então se tivermos 1000 elementos, ao invés de utilizar direto o método equals, que nesse caso seria necessário comparar um por um, com o hashcode nós vamos separar somente os elementos que possuem o código hash igual e dai usar o equals somente nesses elementos. Tornando o processo mais rápido.<br />
+  O Hashcode é mais utilizado quando estamos trabalhando com Collections.
+      
+https://blog.cod3r.com.br/desmistificando-hashcode-e-equals-em-java/
+      
+## Revisão sobre Collections
+      
+Collection é um conjunto bem definido de interfaces e classes para representar e tratar grupos de dados como uma única unidade, que pode ser chamada coleção, ou collection.<br />
+Collection é composta por alguns tipos de coleções:
+* Set: Não é ordenado por padrão, porém temos a possibilidade de ordenar, não é indexado e não aceita repetição.
+* List: Indexada e aceita repetição.
+* Map: Chave/valor, a chave não pode ser repetida e o valor é possível repetir.
+* Queue: Implementa fila, First In First Out (FIFO).
+* Stack: Implementa pilha, Last In First Out (LIFO).
+      
+      
+</p>
