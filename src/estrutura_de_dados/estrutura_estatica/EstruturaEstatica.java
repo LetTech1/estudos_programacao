@@ -24,10 +24,10 @@ public class EstruturaEstatica<T> {
     }
 
     protected void adicionar(int posicao, T elemento) {
-        aumentarCapacidade();
-        if (!(posicao >= 0 && posicao < tamanho)) {
-            throw new IllegalArgumentException("Posição inválida!!");
+        if (posicao < 0 || posicao > tamanho){
+            throw new IllegalArgumentException("Posição inválida");
         }
+        this.aumentarCapacidade();
         for (int i = this.tamanho - 1; i >= posicao; i--) {
             this.elementos[i + 1] = this.elementos[i];
         }
