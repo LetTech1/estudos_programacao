@@ -58,12 +58,13 @@ public class Fila<T> {
         System.out.println(this.elementos[0]);
     }
 
-    public void desenfileira() {
+    public int desenfileira() {
         System.out.println("Senha: " + this.elementos[0]);
         for (int i = 0; i < tamanho; i++) {
             this.elementos[i] = this.elementos[i + 1];
         }
         tamanho--;
+        return 0;
     }
 
     public void tamanho() {

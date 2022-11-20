@@ -23,14 +23,44 @@ public class Fila2<T> extends EstruturaEstatica<T> {
         System.out.println(this.elementos[0]);
     }
 
-    public void desenfileira() {
+  /*  public T desenfileira() {
         if (this.estaVazia()){
             System.out.println("Não existe elementos na fila!");
         }
-        System.out.println("Senha: " + this.elementos[0]);
+        //String senha = (String) this.elementos[0];
         for (int i = 0; i < tamanho; i++) {
             this.elementos[i] = this.elementos[i + 1];
         }
         tamanho--;
+        return null;
+    }*/
+
+    public T desenfileira(){
+
+        final int POS = 0;
+
+        if (this.estaVazia()){
+            return null;
+        }
+
+        T elementoASerRemovido = this.elementos[POS];
+
+        this.remove(POS);
+
+        return elementoASerRemovido;
+
+    }
+
+    public int buscar(T elemento){
+        for (int i = 0; i<tamanho; i++){
+            if(this.elementos[i].equals(elemento)){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public boolean contem(T elemento){
+        return buscar(elemento) > -1;
     }
 }
