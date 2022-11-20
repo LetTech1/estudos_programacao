@@ -36,6 +36,13 @@ O intuito desse repositório é registrar minha evolução diária sobre assunto
 <img src="https://user-images.githubusercontent.com/71408314/200052240-a056f701-153c-4b14-8b3d-f166bf23a094.png" height="400" width="500"/>
 </div>
 
+3. Fila
+* Uma fila é uma estrutura de dados dinâmica que admite remoção de elementos e inserção de novos objetos. Mais especificamente, uma fila (queue) é uma estrutura sujeita à seguinte regra de operação: sempre que houver uma remoção, o elemento removido é o que está na estrutura há mais tempo(FIFO).
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/71408314/202917911-60be5a3d-ab39-463b-8bd4-9a7ea7f222ec.png" height="400" width="500"/>
+</div>
+
 ## Equals e Hashcode
 
 1. Entendendo Equals e Hashcode
